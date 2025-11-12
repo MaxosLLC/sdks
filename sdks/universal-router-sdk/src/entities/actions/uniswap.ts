@@ -1,6 +1,6 @@
 import { RoutePlanner, CommandType } from '../../utils/routerCommands'
-import { Trade as V2Trade, Pair } from '@uniswap/v2-sdk'
-import { Trade as V3Trade, Pool as V3Pool, encodeRouteToPath } from '@uniswap/v3-sdk'
+import { Trade as V2Trade, Pair } from '@maxosllc/v2-sdk'
+import { Trade as V3Trade, Pool as V3Pool, encodeRouteToPath } from '@maxosllc/v3-sdk'
 import {
   Route as V4Route,
   Trade as V4Trade,
@@ -8,13 +8,12 @@ import {
   V4Planner,
   encodeRouteToPath as encodeV4RouteToPath,
   Actions,
-} from '@uniswap/v4-sdk'
+} from '@maxosllc/v4-sdk'
 import {
   Trade as RouterTrade,
   MixedRouteTrade,
   Protocol,
   IRoute,
-  RouteV2,
   RouteV3,
   MixedRouteSDK,
   MixedRoute,
@@ -22,16 +21,16 @@ import {
   getOutputOfPools,
   encodeMixedRouteToPath,
   partitionMixedRouteByProtocol,
-} from '@uniswap/router-sdk'
+} from '@maxosllc/router-sdk'
 import { Permit2Permit } from '../../utils/inputTokens'
 import { getPathCurrency } from '../../utils/pathCurrency'
-import { Currency, TradeType, Token, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { Currency, TradeType, Token, CurrencyAmount, Percent } from '@maxosllc/sdk-core'
 import { Command, RouterActionType, TradeConfig } from '../Command'
 import { SENDER_AS_RECIPIENT, ROUTER_AS_RECIPIENT, CONTRACT_BALANCE, ETH_ADDRESS } from '../../utils/constants'
 import { getCurrencyAddress } from '../../utils/getCurrencyAddress'
 import { encodeFeeBips } from '../../utils/numbers'
 import { BigNumber, BigNumberish } from 'ethers'
-import { TPool } from '@uniswap/router-sdk'
+import { TPool } from '@maxosllc/router-sdk'
 
 export type FlatFeeOptions = {
   amount: BigNumberish
@@ -287,10 +286,11 @@ function addV2Swap<TInput extends Currency, TOutput extends Currency>(
   routerMustCustody: boolean
 ): void {
   const trade = new V2Trade(
-    route as RouteV2<TInput, TOutput>,
-    tradeType == TradeType.EXACT_INPUT ? inputAmount : outputAmount,
+    route as any,
+    (tradeType == TradeType.EXACT_INPUT ? inputAmount : outputAmount) as CurrencyAmount<TInput>,
     tradeType
   )
+
 
   if (tradeType == TradeType.EXACT_INPUT) {
     planner.addCommand(CommandType.V2_SWAP_EXACT_IN, [
@@ -505,3 +505,4 @@ function riskOfPartialFill(trade: RouterTrade<Currency, Currency, TradeType>): b
 function hasFeeOption(swapOptions: SwapOptions): boolean {
   return !!swapOptions.fee || !!swapOptions.flatFee
 }
+

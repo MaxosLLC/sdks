@@ -2589,6 +2589,242 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@maxosllc/router-sdk@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@maxosllc/router-sdk@npm:0.0.2"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@maxosllc/sdk-core": 0.0.2
+    "@maxosllc/v2-sdk": 0.0.2
+    "@maxosllc/v3-sdk": 0.0.3
+    "@maxosllc/v4-sdk": 0.0.2
+    "@uniswap/swap-router-contracts": ^1.3.0
+  checksum: 340a7ca70bdc1453204cea0b6385ce79a66c166af2c55f6fd1409620fae3e24d5fc223abff3149b06efc2248d59a4af47a35a346835bc0b5fce5e9fed4cd4677
+  languageName: node
+  linkType: hard
+
+"@maxosllc/router-sdk@workspace:sdks/router-sdk":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/router-sdk@workspace:sdks/router-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@maxosllc/sdk-core": 0.0.2
+    "@maxosllc/v2-sdk": 0.0.2
+    "@maxosllc/v3-sdk": 0.0.3
+    "@maxosllc/v4-sdk": 0.0.2
+    "@types/jest": ^24.0.25
+    "@uniswap/swap-router-contracts": ^1.3.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-prettier: ^3.4.1
+    prettier: ^2.4.1
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@maxosllc/sdk-core@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@maxosllc/sdk-core@npm:0.0.2"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/keccak256": 5.7.0
+    "@ethersproject/strings": 5.7.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+  checksum: 3ab6bdce28563d796ea81c57131bad7a650fb063d229b8b9ba1b73aac88b929dd89ee4aab2254e7b81d95d574de210bd0c0a32483f5ab3f90f50b8064db55980
+  languageName: node
+  linkType: hard
+
+"@maxosllc/sdk-core@workspace:sdks/sdk-core":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/sdk-core@workspace:sdks/sdk-core"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/bytes": ^5.7.0
+    "@ethersproject/keccak256": 5.7.0
+    "@ethersproject/strings": 5.7.0
+    "@types/big.js": ^4.0.5
+    "@types/jest": ^24.0.25
+    babel-eslint: 10.1.0
+    big.js: ^5.2.2
+    decimal.js-light: ^2.5.0
+    eslint-config-prettier: ^9.1.0
+    eslint-config-react-app: 7.0.1
+    eslint-plugin-flowtype: 8.0.3
+    eslint-plugin-jsx-a11y: 6.10.2
+    eslint-plugin-prettier: ^3.4.1
+    eslint-plugin-react: 7.37.4
+    eslint-plugin-react-hooks: 5.2.0
+    jsbi: ^3.1.4
+    tiny-invariant: ^1.1.0
+    toformat: ^2.0.0
+    tsdx: ^0.14.1
+  languageName: unknown
+  linkType: soft
+
+"@maxosllc/universal-router-sdk@workspace:sdks/universal-router-sdk":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/universal-router-sdk@workspace:sdks/universal-router-sdk"
+  dependencies:
+    "@maxosllc/router-sdk": 0.0.2
+    "@maxosllc/sdk-core": 0.0.2
+    "@maxosllc/v2-sdk": 0.0.2
+    "@maxosllc/v3-sdk": 0.0.3
+    "@maxosllc/v4-sdk": 0.0.2
+    "@openzeppelin/contracts": 4.7.0
+    "@types/chai": ^4.3.3
+    "@types/mocha": ^9.1.1
+    "@types/node": ^18.7.16
+    "@types/node-fetch": ^2.6.2
+    "@uniswap/permit2-sdk": ^1.3.0
+    "@uniswap/universal-router": 2.0.0-beta.2
+    "@uniswap/v2-core": ^1.0.1
+    "@uniswap/v3-core": 1.0.0
+    bignumber.js: ^9.0.2
+    chai: ^4.3.6
+    dotenv: ^16.0.3
+    eslint-plugin-prettier: ^3.4.1
+    ethers: ^5.7.0
+    hardhat: ^2.25.0
+    prettier: ^2.4.1
+    ts-node: ^10.9.1
+    tsdx: ^0.14.1
+    tslib: ^2.3.0
+    typedoc: ^0.21.2
+    typescript: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
+"@maxosllc/v2-sdk@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@maxosllc/v2-sdk@npm:0.0.2"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: 8c114cb40f329b0142639b42d440fa90ba64e12ea9aa0a9a63dff03942c00bd5d937c5afaeb4851078ea7111f4cbfc16e0ec4387082e87587463857559b4c53f
+  languageName: node
+  linkType: hard
+
+"@maxosllc/v2-sdk@workspace:sdks/v2-sdk":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/v2-sdk@workspace:sdks/v2-sdk"
+  dependencies:
+    "@ethersproject/address": ^5.0.2
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    "@types/big.js": ^4.0.5
+    "@types/jest": ^24.0.25
+    "@uniswap/v2-core": ^1.0.1
+    eslint: ^8.57.0
+    eslint-config-prettier: ^9.1.0
+    eslint-config-react-app: 7.0.1
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-functional: ^3.0.2
+    eslint-plugin-import: ^2.22.0
+    eslint-plugin-prettier: ^3.4.1
+    jest: 25.5.0
+    prettier: ^2.4.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+    tsdx: ^0.14.1
+    typescript: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
+"@maxosllc/v3-sdk@npm:0.0.3":
+  version: 0.0.3
+  resolution: "@maxosllc/v3-sdk@npm:0.0.3"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    "@uniswap/swap-router-contracts": ^1.3.0
+    "@uniswap/v3-periphery": ^1.1.1
+    "@uniswap/v3-staker": 1.0.0
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: 2437204ef47dc5a0284dffdf9868cf402c2655261f5431162e85aeec8dab1ec0b659baf28fa649ac0518db83aa252ec1bd4db8fd22af1c61c049427516dc63af
+  languageName: node
+  linkType: hard
+
+"@maxosllc/v3-sdk@workspace:sdks/v3-sdk":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/v3-sdk@workspace:sdks/v3-sdk"
+  dependencies:
+    "@ethersproject/abi": ^5.5.0
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    "@types/jest": ^24.0.25
+    "@uniswap/swap-router-contracts": ^1.3.0
+    "@uniswap/v3-core": 1.0.0
+    "@uniswap/v3-periphery": ^1.1.1
+    "@uniswap/v3-staker": 1.0.0
+    babel-jest: 25.5.1
+    eslint: ^8.57.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-functional: ^3.0.2
+    eslint-plugin-import: ^2.22.0
+    eslint-plugin-prettier: ^3.4.1
+    jest: 25.5.0
+    prettier: ^2.4.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+    tsdx: ^0.14.1
+    typescript: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
+"@maxosllc/v4-sdk@npm:0.0.2":
+  version: 0.0.2
+  resolution: "@maxosllc/v4-sdk@npm:0.0.2"
+  dependencies:
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    "@maxosllc/v3-sdk": 0.0.3
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+  checksum: c2264d29867d44194badc84f092695d2a7a7a1bc551a054c857b0e240722b5460d869e559904d31d28ac5a0f2b1f6b1e1fd43982fc57e22482e6518d4b46b3bc
+  languageName: node
+  linkType: hard
+
+"@maxosllc/v4-sdk@workspace:sdks/v4-sdk":
+  version: 0.0.0-use.local
+  resolution: "@maxosllc/v4-sdk@workspace:sdks/v4-sdk"
+  dependencies:
+    "@ethersproject/solidity": ^5.0.9
+    "@maxosllc/sdk-core": 0.0.2
+    "@maxosllc/v3-sdk": 0.0.3
+    "@types/chai": ^4.3.3
+    "@types/mocha": ^9.1.1
+    "@types/node": ^18.7.16
+    "@types/node-fetch": ^2.6.2
+    chai: ^4.3.6
+    dotenv: ^16.0.3
+    eslint: ^8.57.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-functional: ^3.0.2
+    eslint-plugin-import: ^2.22.0
+    eslint-plugin-prettier: ^3.4.1
+    jest: 25.5.0
+    prettier: ^2.4.1
+    tiny-invariant: ^1.1.0
+    tiny-warning: ^1.0.3
+    ts-node: ^10.9.1
+    tsdx: ^0.14.1
+    tslib: ^2.3.0
+    typedoc: ^0.21.2
+    typescript: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
 "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1":
   version: 5.1.1-v1
   resolution: "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1"
@@ -4840,39 +5076,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@uniswap/router-sdk@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@uniswap/router-sdk@npm:2.1.0"
-  dependencies:
-    "@ethersproject/abi": ^5.5.0
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/swap-router-contracts": ^1.3.0
-    "@uniswap/v2-sdk": ^4.16.0
-    "@uniswap/v3-sdk": ^3.26.0
-    "@uniswap/v4-sdk": ^1.22.0
-  checksum: 337d4f5962296a8ab82b0515b86a109ec25679c3719279a74df75d52c59b8a23261a23f0af7f7369daf1612ea212a05d2436f23e0c0b037db869cf5794ccbf3a
-  languageName: node
-  linkType: hard
-
-"@uniswap/router-sdk@workspace:sdks/router-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/router-sdk@workspace:sdks/router-sdk"
-  dependencies:
-    "@ethersproject/abi": ^5.5.0
-    "@types/jest": ^24.0.25
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/swap-router-contracts": ^1.3.0
-    "@uniswap/v2-sdk": ^4.16.0
-    "@uniswap/v3-sdk": ^3.26.0
-    "@uniswap/v4-sdk": ^1.22.0
-    eslint-config-prettier: ^9.1.0
-    eslint-plugin-prettier: ^3.4.1
-    prettier: ^2.4.1
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
-
-"@uniswap/sdk-core@npm:^7.5.0, @uniswap/sdk-core@npm:^7.6.0, @uniswap/sdk-core@npm:^7.8.0":
+"@uniswap/sdk-core@npm:^7.5.0, @uniswap/sdk-core@npm:^7.6.0":
   version: 7.8.0
   resolution: "@uniswap/sdk-core@npm:7.8.0"
   dependencies:
@@ -4888,33 +5092,6 @@ __metadata:
   checksum: 228b830fab2b165467b1e099762cf608126af4ee34daccaf6ba80ea68208ab8c705551d1056939236e83609a45e51459ea635868da847e2ea61c856d0be9e22b
   languageName: node
   linkType: hard
-
-"@uniswap/sdk-core@workspace:sdks/sdk-core":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/sdk-core@workspace:sdks/sdk-core"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/bytes": ^5.7.0
-    "@ethersproject/keccak256": 5.7.0
-    "@ethersproject/strings": 5.7.0
-    "@types/big.js": ^4.0.5
-    "@types/jest": ^24.0.25
-    babel-eslint: 10.1.0
-    big.js: ^5.2.2
-    decimal.js-light: ^2.5.0
-    eslint-config-prettier: ^9.1.0
-    eslint-config-react-app: 7.0.1
-    eslint-plugin-flowtype: 8.0.3
-    eslint-plugin-jsx-a11y: 6.10.2
-    eslint-plugin-prettier: ^3.4.1
-    eslint-plugin-react: 7.37.4
-    eslint-plugin-react-hooks: 5.2.0
-    jsbi: ^3.1.4
-    tiny-invariant: ^1.1.0
-    toformat: ^2.0.0
-    tsdx: ^0.14.1
-  languageName: unknown
-  linkType: soft
 
 "@uniswap/smart-wallet-sdk@workspace:sdks/smart-wallet-sdk":
   version: 0.0.0-use.local
@@ -5006,39 +5183,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@uniswap/universal-router-sdk@workspace:sdks/universal-router-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/universal-router-sdk@workspace:sdks/universal-router-sdk"
-  dependencies:
-    "@openzeppelin/contracts": 4.7.0
-    "@types/chai": ^4.3.3
-    "@types/mocha": ^9.1.1
-    "@types/node": ^18.7.16
-    "@types/node-fetch": ^2.6.2
-    "@uniswap/permit2-sdk": ^1.3.0
-    "@uniswap/router-sdk": ^2.1.0
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/universal-router": 2.0.0-beta.2
-    "@uniswap/v2-core": ^1.0.1
-    "@uniswap/v2-sdk": ^4.16.0
-    "@uniswap/v3-core": 1.0.0
-    "@uniswap/v3-sdk": ^3.26.0
-    "@uniswap/v4-sdk": ^1.22.0
-    bignumber.js: ^9.0.2
-    chai: ^4.3.6
-    dotenv: ^16.0.3
-    eslint-plugin-prettier: ^3.4.1
-    ethers: ^5.7.0
-    hardhat: ^2.25.0
-    prettier: ^2.4.1
-    ts-node: ^10.9.1
-    tsdx: ^0.14.1
-    tslib: ^2.3.0
-    typedoc: ^0.21.2
-    typescript: ^4.3.3
-  languageName: unknown
-  linkType: soft
-
 "@uniswap/universal-router@npm:2.0.0-beta.2":
   version: 2.0.0-beta.2
   resolution: "@uniswap/universal-router@npm:2.0.0-beta.2"
@@ -5056,45 +5200,6 @@ __metadata:
   checksum: eaa118fe45eac2e80b7468547ce2cde12bd3c8157555d2e40e0462a788c9506c6295247b511382da85e44a89ad92aff7bb3433b23bfbd2eeea23942ecd46e979
   languageName: node
   linkType: hard
-
-"@uniswap/v2-sdk@npm:^4.16.0":
-  version: 4.16.0
-  resolution: "@uniswap/v2-sdk@npm:4.16.0"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/solidity": ^5.0.9
-    "@uniswap/sdk-core": ^7.8.0
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-  checksum: 1e379f2cbc2a57355366717889c479c35be9ba8468204b571ad060276bfb908f7eb4e397f8045c0ca823d5cc6b8dd7ed45fc13dbfcc76d1d2276a060f5a45420
-  languageName: node
-  linkType: hard
-
-"@uniswap/v2-sdk@workspace:sdks/v2-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/v2-sdk@workspace:sdks/v2-sdk"
-  dependencies:
-    "@ethersproject/address": ^5.0.2
-    "@ethersproject/solidity": ^5.0.9
-    "@types/big.js": ^4.0.5
-    "@types/jest": ^24.0.25
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/v2-core": ^1.0.1
-    eslint: ^8.57.0
-    eslint-config-prettier: ^9.1.0
-    eslint-config-react-app: 7.0.1
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-functional: ^3.0.2
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-prettier: ^3.4.1
-    jest: 25.5.0
-    prettier: ^2.4.1
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-    tsdx: ^0.14.1
-    typescript: ^4.3.3
-  languageName: unknown
-  linkType: soft
 
 "@uniswap/v3-core@npm:1.0.0":
   version: 1.0.0
@@ -5123,50 +5228,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/v3-sdk@npm:3.26.0, @uniswap/v3-sdk@npm:^3.26.0":
-  version: 3.26.0
-  resolution: "@uniswap/v3-sdk@npm:3.26.0"
-  dependencies:
-    "@ethersproject/abi": ^5.5.0
-    "@ethersproject/solidity": ^5.0.9
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/swap-router-contracts": ^1.3.0
-    "@uniswap/v3-periphery": ^1.1.1
-    "@uniswap/v3-staker": 1.0.0
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-  checksum: 4e08fd5013b4ba780a4b1c2954aeecc6473daba3947d94671c3b5aa7ff8a596cf58321120b03418dd7078e45b4e4c6a3284af750eba4821b50a7a99918858935
-  languageName: node
-  linkType: hard
-
-"@uniswap/v3-sdk@workspace:sdks/v3-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/v3-sdk@workspace:sdks/v3-sdk"
-  dependencies:
-    "@ethersproject/abi": ^5.5.0
-    "@ethersproject/solidity": ^5.0.9
-    "@types/jest": ^24.0.25
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/swap-router-contracts": ^1.3.0
-    "@uniswap/v3-core": 1.0.0
-    "@uniswap/v3-periphery": ^1.1.1
-    "@uniswap/v3-staker": 1.0.0
-    babel-jest: 25.5.1
-    eslint: ^8.57.0
-    eslint-config-prettier: ^9.1.0
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-functional: ^3.0.2
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-prettier: ^3.4.1
-    jest: 25.5.0
-    prettier: ^2.4.1
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-    tsdx: ^0.14.1
-    typescript: ^4.3.3
-  languageName: unknown
-  linkType: soft
-
 "@uniswap/v3-staker@npm:1.0.0":
   version: 1.0.0
   resolution: "@uniswap/v3-staker@npm:1.0.0"
@@ -5177,50 +5238,6 @@ __metadata:
   checksum: 5a68e59f33d4761956ad735c8ce5ea6e566076bd260ea0a0bb4b3a0db237719e39f21a22eb0a5a231141efdf0154bfe03f690612d632898f33192b4442c888b3
   languageName: node
   linkType: hard
-
-"@uniswap/v4-sdk@npm:^1.22.0":
-  version: 1.22.0
-  resolution: "@uniswap/v4-sdk@npm:1.22.0"
-  dependencies:
-    "@ethersproject/solidity": ^5.0.9
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/v3-sdk": 3.26.0
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-  checksum: 6e590ed4f7cc1f8c86e27cec2837308b74a7dc0288c813809aafd5c08b3906ef9c425f6bc1acbbab68b62c75b218e28b270a4afb519a1c92feddeedc4d118054
-  languageName: node
-  linkType: hard
-
-"@uniswap/v4-sdk@workspace:sdks/v4-sdk":
-  version: 0.0.0-use.local
-  resolution: "@uniswap/v4-sdk@workspace:sdks/v4-sdk"
-  dependencies:
-    "@ethersproject/solidity": ^5.0.9
-    "@types/chai": ^4.3.3
-    "@types/mocha": ^9.1.1
-    "@types/node": ^18.7.16
-    "@types/node-fetch": ^2.6.2
-    "@uniswap/sdk-core": ^7.8.0
-    "@uniswap/v3-sdk": 3.26.0
-    chai: ^4.3.6
-    dotenv: ^16.0.3
-    eslint: ^8.57.0
-    eslint-config-prettier: ^9.1.0
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-functional: ^3.0.2
-    eslint-plugin-import: ^2.22.0
-    eslint-plugin-prettier: ^3.4.1
-    jest: 25.5.0
-    prettier: ^2.4.1
-    tiny-invariant: ^1.1.0
-    tiny-warning: ^1.0.3
-    ts-node: ^10.9.1
-    tsdx: ^0.14.1
-    tslib: ^2.3.0
-    typedoc: ^0.21.2
-    typescript: ^4.3.3
-  languageName: unknown
-  linkType: soft
 
 "JSONStream@npm:^1.0.3":
   version: 1.3.5

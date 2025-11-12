@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/v2-sdk",
+  "name": "@maxosllc/v2-sdk",
   "description": "🛠 An SDK for building applications on top of Uniswap V2",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "version": "0.0.2",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -26,7 +26,7 @@
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
     "@ethersproject/solidity": "^5.0.9",
-    "@uniswap/sdk-core": "^7.8.0",
+    "@maxosllc/sdk-core": "0.0.2",
     "tiny-invariant": "^1.1.0",
     "tiny-warning": "^1.0.3"
   },
@@ -52,36 +52,6 @@
     "singleQuote": true
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
-  "release": {
-    "extends": "semantic-release-monorepo",
-    "branches": [
-      {
-        "name": "main",
-        "prerelease": false
-      }
-    ],
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "angular",
-          "releaseRules": "../../publishing/release-rules.cjs"
-        }
-      ],
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "successCmd": "git restore yarn.lock && yarn",
-          "failCmd": "git restore yarn.lock && yarn",
-          "execCwd": "../.."
-        }
-      ]
-    ]
+    "access": "public"
   }
 }
