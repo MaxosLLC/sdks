@@ -1,8 +1,8 @@
-import { MixedRouteSDK, Trade as RouterTrade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@uniswap/sdk-core'
-import { Pair, Route as V2Route } from '@uniswap/v2-sdk'
-import { Pool as V3Pool, Route as V3Route, FeeAmount } from '@uniswap/v3-sdk'
-import { Pool as V4Pool, Route as V4Route } from '@uniswap/v4-sdk'
+import { MixedRouteSDK, Trade as RouterTrade } from '@maxosllc/router-sdk'
+import { Currency, CurrencyAmount, Ether, Token, TradeType } from '@maxosllc/sdk-core'
+import { Pair, Route as V2Route } from '@maxosllc/v2-sdk'
+import { Pool as V3Pool, Route as V3Route, FeeAmount } from '@maxosllc/v3-sdk'
+import { Pool as V4Pool, Route as V4Route } from '@maxosllc/v4-sdk'
 import { BigNumber } from 'ethers'
 import { ETH_ADDRESS, E_ETH_ADDRESS } from './constants'
 
@@ -146,7 +146,7 @@ export class RouterTradeAdapter {
           : null,
         mixedRoute:
           !isOnlyV4 && !isOnlyV3 && !isOnlyV2
-            ? new MixedRouteSDK(subRoute.map(RouterTradeAdapter.toPoolOrPair), parsedCurrencyIn, parsedCurrencyOut)
+            ? new MixedRouteSDK(subRoute.map(RouterTradeAdapter.toPoolOrPair) as any, parsedCurrencyIn, parsedCurrencyOut)
             : null,
         inputAmount,
         outputAmount,
@@ -157,28 +157,28 @@ export class RouterTradeAdapter {
       v2Routes: typedRoutes
         .filter((route) => route.routev2)
         .map((route) => ({
-          routev2: route.routev2 as V2Route<Currency, Currency>,
+          routev2: route.routev2 as any,
           inputAmount: route.inputAmount,
           outputAmount: route.outputAmount,
         })),
       v3Routes: typedRoutes
         .filter((route) => route.routev3)
         .map((route) => ({
-          routev3: route.routev3 as V3Route<Currency, Currency>,
+          routev3: route.routev3 as any,
           inputAmount: route.inputAmount,
           outputAmount: route.outputAmount,
         })),
       v4Routes: typedRoutes
         .filter((route) => route.routev4)
         .map((route) => ({
-          routev4: route.routev4 as V4Route<Currency, Currency>,
+          routev4: route.routev4 as any,
           inputAmount: route.inputAmount,
           outputAmount: route.outputAmount,
         })),
       mixedRoutes: typedRoutes
         .filter((route) => route.mixedRoute)
         .map((route) => ({
-          mixedRoute: route.mixedRoute as MixedRouteSDK<Currency, Currency>,
+          mixedRoute: route.mixedRoute as any,
           inputAmount: route.inputAmount,
           outputAmount: route.outputAmount,
         })),

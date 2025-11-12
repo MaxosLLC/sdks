@@ -1,7 +1,7 @@
 {
-  "name": "@uniswap/universal-router-sdk",
+  "name": "@maxosllc/universal-router-sdk",
   "description": "sdk for integrating with the Universal Router contracts",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "version": "0.0.2",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -29,16 +29,16 @@
     "test:hardhat": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' hardhat test"
   },
   "dependencies": {
+    "@maxosllc/router-sdk": "0.0.2",
+    "@maxosllc/sdk-core": "0.0.2",
+    "@maxosllc/v2-sdk": "0.0.2",
+    "@maxosllc/v3-sdk": "0.0.3",
+    "@maxosllc/v4-sdk": "0.0.2",
     "@openzeppelin/contracts": "4.7.0",
     "@uniswap/permit2-sdk": "^1.3.0",
-    "@uniswap/router-sdk": "^2.1.0",
-    "@uniswap/sdk-core": "^7.8.0",
     "@uniswap/universal-router": "2.0.0-beta.2",
     "@uniswap/v2-core": "^1.0.1",
-    "@uniswap/v2-sdk": "^4.16.0",
     "@uniswap/v3-core": "1.0.0",
-    "@uniswap/v3-sdk": "^3.26.0",
-    "@uniswap/v4-sdk": "^1.22.0",
     "bignumber.js": "^9.0.2",
     "ethers": "^5.7.0"
   },
@@ -65,37 +65,7 @@
     "trailingComma": "es5"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
-  "release": {
-    "extends": "semantic-release-monorepo",
-    "branches": [
-      {
-        "name": "main",
-        "prerelease": false
-      }
-    ],
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "angular",
-          "releaseRules": "../../publishing/release-rules.cjs"
-        }
-      ],
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      [
-        "@semantic-release/exec",
-        {
-          "successCmd": "git restore yarn.lock && yarn",
-          "failCmd": "git restore yarn.lock && yarn",
-          "execCwd": "../.."
-        }
-      ]
-    ]
+    "access": "public"
   },
   "installConfig": {
     "hoistingLimits": "workspaces"

@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { Pool as V4Pool } from '@uniswap/v4-sdk'
+import { Currency, CurrencyAmount, Token } from '@maxosllc/sdk-core'
+import { Pool as V4Pool } from '@maxosllc/v4-sdk'
 import { TPool } from './TPool'
 
 export function amountWithPathCurrency(amount: CurrencyAmount<Currency>, pool: TPool): CurrencyAmount<Currency> {

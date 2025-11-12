@@ -29,9 +29,10 @@ export declare enum ChainId {
     UNICHAIN = 130,
     MONAD_TESTNET = 10143,
     SONEIUM = 1868,
-    MONAD = 143
+    MONAD = 143,
+    BLOCKDAG_AWAKENING = 1043
 }
-export declare const SUPPORTED_CHAINS: readonly [ChainId.MAINNET, ChainId.OPTIMISM, ChainId.OPTIMISM_GOERLI, ChainId.OPTIMISM_SEPOLIA, ChainId.ARBITRUM_ONE, ChainId.ARBITRUM_GOERLI, ChainId.ARBITRUM_SEPOLIA, ChainId.POLYGON, ChainId.POLYGON_MUMBAI, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.CELO_ALFAJORES, ChainId.CELO, ChainId.BNB, ChainId.AVALANCHE, ChainId.BASE, ChainId.BASE_GOERLI, ChainId.BASE_SEPOLIA, ChainId.ZORA, ChainId.ZORA_SEPOLIA, ChainId.ROOTSTOCK, ChainId.BLAST, ChainId.ZKSYNC, ChainId.WORLDCHAIN, ChainId.UNICHAIN_SEPOLIA, ChainId.UNICHAIN, ChainId.MONAD_TESTNET, ChainId.SONEIUM, ChainId.MONAD];
+export declare const SUPPORTED_CHAINS: readonly [ChainId.MAINNET, ChainId.OPTIMISM, ChainId.OPTIMISM_GOERLI, ChainId.OPTIMISM_SEPOLIA, ChainId.ARBITRUM_ONE, ChainId.ARBITRUM_GOERLI, ChainId.ARBITRUM_SEPOLIA, ChainId.POLYGON, ChainId.POLYGON_MUMBAI, ChainId.GOERLI, ChainId.SEPOLIA, ChainId.CELO_ALFAJORES, ChainId.CELO, ChainId.BNB, ChainId.AVALANCHE, ChainId.BASE, ChainId.BASE_GOERLI, ChainId.BASE_SEPOLIA, ChainId.ZORA, ChainId.ZORA_SEPOLIA, ChainId.ROOTSTOCK, ChainId.BLAST, ChainId.ZKSYNC, ChainId.WORLDCHAIN, ChainId.UNICHAIN_SEPOLIA, ChainId.UNICHAIN, ChainId.MONAD_TESTNET, ChainId.SONEIUM, ChainId.MONAD, ChainId.BLOCKDAG_AWAKENING];
 export declare type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number];
 export declare enum NativeCurrencyName {
     ETHER = "ETH",
@@ -41,5 +42,6 @@ export declare enum NativeCurrencyName {
     MOONBEAM = "GLMR",
     BNB = "BNB",
     AVAX = "AVAX",
-    ROOTSTOCK = "RBTC"
+    ROOTSTOCK = "RBTC",
+    BDAG = "BDAG"
 }
